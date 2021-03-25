@@ -5,4 +5,10 @@ block content
     p Can you figure out how to provide a small, medium and large version using the srcset attribute?
     p (hint: start in srcset.pug)
     div.
-        <img src="http://via.placeholder.com/3200X1200" />
+        <img 
+            //- src="http://via.placeholder.com/3200X1200" 
+            srcset="
+            http://via.placeholder.com/300X300 400w, 
+            http://via.placeholder.com/800X800 800w, 
+            http://via.placeholder.com/1200x1800 1200w"
+         />
